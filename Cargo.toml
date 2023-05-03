@@ -1,0 +1,23 @@
+[package]
+name = "wasm-webauthn"
+version = "0.0.0"
+edition = "2021"
+authors = ["shimun <shimun@shimun.net>"]
+description = "Sane interface over web-sys navigator.credential"
+license = "Apache-2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ciborium = "0.2.0"
+coset = { version = "0.3.4", features = ["std"] }
+serde = { version = "1.0.160", features = ["derive"] }
+serde_bytes = "0.11.9"
+js-sys = "0.3.61"
+tracing = "0.1.37"
+wasm-bindgen = { version = "0.2.84", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4.34"
+web-sys = { version = "0.3.61", features = ["Credential", "Navigator", "CredentialsContainer", "CredentialCreationOptions", "CredentialRequestOptions", "PublicKeyCredential", "PublicKeyCredentialEntity", "AuthenticatorResponse", "PublicKeyCredentialCreationOptions", "PublicKeyCredentialRpEntity", "PublicKeyCredentialUserEntity", "PublicKeyCredentialRequestOptions", "AuthenticatorAssertionResponse", "PublicKeyCredentialDescriptor", "PublicKeyCredentialType", "console", "AuthenticatorAttestationResponse", "Window", "Location", "AuthenticatorSelectionCriteria", "UserVerificationRequirement"] }
+derive_builder = "0.12.0"
+thiserror = "1.0.40"
+serde-wasm-bindgen = "0.5.0"

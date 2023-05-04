@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 authors = ["shimun <shimun@shimun.net>"]
 description = "Sane interface over web-sys navigator.credential"
+repository = "https://github.com/shimunn/wasm-webauthn"
+homepage = "https://github.com/shimunn/wasm-webauthn"
 license = "Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

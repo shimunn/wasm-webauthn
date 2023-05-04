@@ -1,6 +1,6 @@
 [package]
 name = "wasm-webauthn"
-version = "0.0.0"
+version = "0.1.0"
 edition = "2021"
 authors = ["shimun <shimun@shimun.net>"]
 description = "Sane interface over web-sys navigator.credential"

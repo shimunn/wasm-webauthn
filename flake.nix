@@ -18,6 +18,7 @@
       toolchain = pkgs: with inputs.fenix.packages."${pkgs.system}"; combine [
         minimal.rustc
         minimal.cargo
+        latest.clippy-preview
         latest.rust-std
         targets.wasm32-unknown-unknown.latest.rust-std
       ];

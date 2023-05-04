@@ -1,3 +1,4 @@
+#![doc = include_str!("../README.md")]
 use std::{borrow::Cow, io::Read, ops::Deref};
 
 use coset::{CborSerializable, CoseKey};
